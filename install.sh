@@ -1,14 +1,12 @@
 #/bin/sh
 set +x
 
-
 REL="$(dirname "$0")"
 DOTFILES_HOME="$HOME/.dotfiles"
 
 function config {
    /usr/bin/git --git-dir="$DOTFILES_HOME" --work-tree=$HOME $@
 }
-
 
 "$REL/yay/install_yay.sh"
 "$REL/yay/install_yay_packages.sh"
