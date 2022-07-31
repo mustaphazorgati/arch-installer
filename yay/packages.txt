@@ -38,7 +38,9 @@ linux
 linux-firmware
 m4
 make
+man-db
 modemmanager
+nano
 net-tools
 network-manager-applet
 networkmanager
@@ -52,6 +54,7 @@ pipewire-jack
 pipewire-pulse
 pkgconf
 rofi
+rxvt-unicode
 sed
 smartmontools
 sudo
@@ -66,6 +69,7 @@ xdg-utils
 xorg-server
 xorg-xdpyinfo
 xorg-xinit
+xterm
 yay
 zoom
 zram-generator
