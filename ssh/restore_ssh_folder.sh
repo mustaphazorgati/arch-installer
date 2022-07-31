@@ -1,4 +1,5 @@
 #!/bin/sh
+set +x
 
 REL="$(dirname "$0")"
 

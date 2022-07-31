@@ -1,4 +1,6 @@
 #/bin/sh
+set +x
+
 
 REL="$(dirname "$0")"
 DOTFILES_HOME="$HOME/.dotfiles"
@@ -18,3 +20,6 @@ git remote set-url origin git@github.com:mustaphazorgati/arch-installer.git
 cd -
 config remote set-url origin git@github.com:mustaphazorgati/dotfiles.git
 
+"$REL/system-connections/restore_system_connections.sh"
+"$REL/gpg/restore_gpg_keys.sh"
+"$REL/ssh/restore_ssh_folder.sh"
