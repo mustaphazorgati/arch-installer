@@ -6,6 +6,7 @@ base
 binutils
 bison
 blueman
+cifs-utils
 dmenu
 efibootmgr
 fakeroot
