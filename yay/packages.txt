@@ -71,6 +71,7 @@ spotify
 sudo
 texinfo
 tmux
+trash-cli
 ttf-dejavu
 usbutils
 vi
@@ -85,6 +86,7 @@ xorg-xclock
 xorg-xdpyinfo
 xorg-xinit
 xorg-xinput
+xsel
 xterm
 yay
 zoom
