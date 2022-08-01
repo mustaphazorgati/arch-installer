@@ -32,3 +32,7 @@ gsettings set org.gnome.gnome-screenshot auto-save-directory $HOME/Pictures/
 sudo passwd -l root
 sudo systemctl disable sshd
 sudo systemctl stop sshd
+
+# VIM
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+echo | vim +PluginInstall +qall
