@@ -1,3 +1,4 @@
+accountsservice
 arandr
 archlinux-keyring
 autoconf
@@ -60,6 +61,7 @@ sed
 smartmontools
 sudo
 texinfo
+ttf-dejavu
 usbutils
 vi
 vim
