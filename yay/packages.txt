@@ -65,6 +65,7 @@ pipewire-pulse
 pkgconf
 rclone
 rofi
+rofi-greenclip
 rxvt-unicode
 sed
 smartmontools
