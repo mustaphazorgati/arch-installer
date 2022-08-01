@@ -34,5 +34,12 @@ sudo systemctl disable sshd
 sudo systemctl stop sshd
 
 # VIM
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+VUNDLE_DIR="$HOME/.vim/bundle/Vundle.vim"
+if [[ -d "$VUNDLE_DIR" ]]; then
+  cd "$VUNDLE_DIR"
+  git pull
+  cd -
+else
+  git clone https://github.com/VundleVim/Vundle.vim.git "$VUNDLE_DIR"
+fi
 echo | vim +PluginInstall +qall
