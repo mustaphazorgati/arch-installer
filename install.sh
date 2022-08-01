@@ -21,3 +21,16 @@ config remote set-url origin git@github.com:mustaphazorgati/dotfiles.git
 "$REL/system-connections/restore_system_connections.sh"
 "$REL/gpg/restore_gpg_keys.sh"
 "$REL/ssh/restore_ssh_folder.sh"
+
+# BLUETOOTH
+sudo systemctl enable bluetooth
+sudo systemctl start bluetooth
+
+# SCREENSHOT
+mkdir -p $HOME/Pictures
+gsettings set org.gnome.gnome-screenshot auto-save-directory $HOME/Pictures/
+
+# SECURITY
+sudo passwd -l root
+sudo systemctl disable sshd
+sudo systemctl stop sshd
