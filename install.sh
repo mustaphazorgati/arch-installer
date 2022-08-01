@@ -18,10 +18,7 @@ git remote set-url origin git@github.com:mustaphazorgati/arch-installer.git
 cd -
 config remote set-url origin git@github.com:mustaphazorgati/dotfiles.git
 
-"$REL/system-connections/restore_system_connections.sh"
-"$REL/gpg/restore_gpg_keys.sh"
-"$REL/ssh/restore_ssh_folder.sh"
-"$REL/spotify/restore_spotify.sh"
+"$REL/restore.sh"
 
 # BLUETOOTH
 sudo systemctl enable bluetooth
