@@ -51,6 +51,7 @@ net-tools
 network-manager-applet
 networkmanager
 networkmanager-openvpn
+nitrogen
 nvidia
 openvpn-update-resolv-conf-git
 otf-font-awesome
@@ -82,7 +83,6 @@ wireless_tools
 wireplumber
 xdg-utils
 xorg-server
-xorg-xclock
 xorg-xdpyinfo
 xorg-xinit
 xorg-xinput

@@ -43,3 +43,13 @@ else
   git clone https://github.com/VundleVim/Vundle.vim.git "$VUNDLE_DIR"
 fi
 echo | vim +PluginInstall +qall
+
+# SWAP
+
+if [[ ! -e "/swapfile" ]]; then
+  sudo dd if=/dev/zero of=/swapfile bs=4M count=12288 status=progress
+  sudo chmod 0600 /swapfile
+  sudo mkswap -U clear /swapfile
+  sudo swapon /swapfile
+  echo "/swapfile none swap defaults 0 0" | sudo tee -a /etc/fstab
+fi
