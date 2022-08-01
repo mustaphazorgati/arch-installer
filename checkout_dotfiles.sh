@@ -15,11 +15,11 @@ function backup_file {
 export -f backup_file
 
 function checkout {
-  mkdir -p $HOME/.config-backup
   config checkout
   if [ $? = 0 ]; then
     echo "Checked out config.";
   else
+    mkdir -p $HOME/.config-backup
     echo "Backing up pre-existing dot files.";
     cd 
     config checkout 2>&1 | egrep "^[[:space:]]+\S+" | awk {'print $1'} | xargs -n1 sh -c 'backup_file "$@"' _
