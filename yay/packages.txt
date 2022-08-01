@@ -57,7 +57,9 @@ openvpn-update-resolv-conf-git
 otf-font-awesome
 p7zip
 pacman
+pamixer
 patch
+pavucontrol
 pipewire
 pipewire-alsa
 pipewire-jack
