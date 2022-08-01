@@ -61,6 +61,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 pkgconf
+rclone
 rofi
 rxvt-unicode
 sed
@@ -82,6 +83,7 @@ xorg-server
 xorg-xclock
 xorg-xdpyinfo
 xorg-xinit
+xorg-xinput
 xterm
 yay
 zoom
