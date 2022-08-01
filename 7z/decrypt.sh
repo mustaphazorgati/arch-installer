@@ -30,5 +30,5 @@ done
 [[ -z "$SOURCE" ]] && echo "-i or --input must be provided" >&2 && exit 1
 [[ -z "$TARGET" ]] && echo "-t or --target must be provided" >&2 && exit 1
 
-$SUDO 7z e -aoa $( [[ -n "$PASSWORD" ]] && echo "-p${PASSWORD}" ) -o"$TARGET" "$SOURCE"
+$SUDO 7z x -aoa $( [[ -n "$PASSWORD" ]] && echo "-p${PASSWORD}" ) -o"$TARGET" "$SOURCE"
 
