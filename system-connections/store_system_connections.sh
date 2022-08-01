@@ -11,4 +11,3 @@ TARGET_FILE="$HOME/.encrypted_dotfiles/system-connections.7z"
 
 sudo chown ""$(whoami)":"$(id -g -n)"" "$TARGET_FILE"
 
-

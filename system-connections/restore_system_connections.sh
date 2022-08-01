@@ -10,3 +10,4 @@ ENV_FILE="$REL/../.env"
 [[ -e "$ENV_FILE" ]] && export $(grep -v '^#' "$ENV_FILE" | xargs)
 
 "$REL/../7z/decrypt.sh" -s -i "$RESTORE_FILE" -t /etc/NetworkManager/system-connections -p "$SYSTEM_CONNECTIONS_PW"
+
