@@ -9,6 +9,7 @@ bison
 blueman
 cifs-utils
 dmenu
+dunst
 efibootmgr
 fakeroot
 file
