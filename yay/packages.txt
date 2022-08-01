@@ -71,6 +71,7 @@ smartmontools
 spotify
 sudo
 texinfo
+thefuck
 tmux
 trash-cli
 ttf-dejavu
