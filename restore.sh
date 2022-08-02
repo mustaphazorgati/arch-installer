@@ -46,11 +46,12 @@ if [[ "$module" == "gpg" || "$module" == "all" ]]; then
   SUDO=""
   PASSWORD="$GPG_PW"
   SOURCE="gpg"
-  TARGET="."
+  TARGET="$(dirname "$0")/.export"
 
   restore
-  gpg --import private.key
-  rm -f private.key
+  gpg --import "$TARGET/private.key"
+  gpg --import-ownertrust "$TARGET/ownertrust.key"
+  rm -rf "$TARGET"
 fi
 
 if [[ "$module" == "google-chrome" || "$module" == "all" ]]; then

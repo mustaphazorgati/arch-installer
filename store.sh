@@ -10,7 +10,6 @@ function store() {
   [[ -e "$TARGET_FILE" ]] && rm "$TARGET_FILE"
 
   $SUDO 7z a -t7z -m0=lzma2 -mx=9 -mfb=64 -md=32m -ms=on -mhe=on -p"${PASSWORD}" "$TARGET_FILE" "$SOURCE"
-
 }
 
 module="$1"
@@ -47,12 +46,14 @@ fi
 if [[ "$module" == "gpg" || "$module" == "all" ]]; then
   SUDO=""
   PASSWORD="$GPG_PW"
-  SOURCE="private.key"
+  SOURCE="$(dirname "$0")/.export/*"
   TARGET="gpg"
-  
-  gpg --export-secret-keys > "$SOURCE"
+
+  mkdir -p "$(dirname "$SOURCE")"
+  gpg --export-secret-keys > "$(dirname "$SOURCE")/private.key"
+  gpg --export-ownertrust > "$(dirname "$SOURCE")/ownertrust.key"
   store
-  rm -f "$SOURCE"
+  rm -rf "$(dirname "$SOURCE")"
 fi
 
 if [[ "$module" == "google-chrome" || "$module" == "all" ]]; then
