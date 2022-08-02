@@ -20,6 +20,7 @@ gawk
 gcc
 gettext
 git
+github-cli
 gitkraken
 gnome-screenshot
 google-chrome
