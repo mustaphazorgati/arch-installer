@@ -37,6 +37,7 @@ i3lock
 i3status
 intel-ucode
 iwd
+jq
 libpulse
 libqmi
 libtool
