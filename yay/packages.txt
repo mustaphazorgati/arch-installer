@@ -70,10 +70,12 @@ rofi
 rofi-greenclip
 rxvt-unicode
 sed
+signal-desktop
 slack-desktop
 smartmontools
 spotify
 sudo
+telegram-desktop
 texinfo
 thefuck
 tmux
