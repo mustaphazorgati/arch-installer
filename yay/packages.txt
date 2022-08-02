@@ -70,6 +70,7 @@ rofi
 rofi-greenclip
 rxvt-unicode
 sed
+slack-desktop
 smartmontools
 spotify
 sudo
