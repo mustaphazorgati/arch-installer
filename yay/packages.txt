@@ -20,6 +20,7 @@ gawk
 gcc
 gettext
 git
+gitkraken
 gnome-screenshot
 google-chrome
 gparted
