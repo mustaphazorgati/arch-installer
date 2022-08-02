@@ -1,10 +1,6 @@
 #!/bin/sh
 set +x
 
-# ssh
-# $HOME/.ssh
-# SSH_PW
-
 REL="$(dirname "$0")"
 ENV_FILE="$REL/.env"
 [[ -e "$ENV_FILE" ]] && export $(grep -v '^#' "$ENV_FILE" | xargs)
@@ -55,5 +51,14 @@ if [[ "$module" == "gpg" || "$module" == "all" ]]; then
   restore
   gpg --import private.key
   rm -f private.key
+fi
+
+if [[ "$module" == "google-chrome" || "$module" == "all" ]]; then
+  SUDO=""
+  PASSWORD="$GOOGLE_CHROME_PW"
+  SOURCE="google-chrome"
+  TARGET="$HOME/.config/google-chrome"
+
+  restore
 fi
 

@@ -55,3 +55,12 @@ if [[ "$module" == "gpg" || "$module" == "all" ]]; then
   rm -f "$SOURCE"
 fi
 
+if [[ "$module" == "google-chrome" || "$module" == "all" ]]; then
+  SUDO=""
+  PASSWORD="$GOOGLE_CHROME_PW"
+  SOURCE="$HOME/.config/google-chrome/*"
+  TARGET="google-chrome"
+  
+  store
+fi
+
