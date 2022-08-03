@@ -65,3 +65,12 @@ if [[ "$module" == "google-chrome" || "$module" == "all" ]]; then
   store
 fi
 
+if [[ "$module" == "gitkraken" || "$module" == "all" ]]; then
+  SUDO=""
+  PASSWORD="$GITKRAKEN_PW"
+  SOURCE="$HOME/.gitkraken/*"
+  TARGET="gitkraken"
+  
+  store
+fi
+

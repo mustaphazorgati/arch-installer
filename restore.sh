@@ -63,3 +63,12 @@ if [[ "$module" == "google-chrome" || "$module" == "all" ]]; then
   restore
 fi
 
+if [[ "$module" == "gitkraken" || "$module" == "all" ]]; then
+  SUDO=""
+  PASSWORD="$GITKRAKEN_PW"
+  SOURCE="gitkraken"
+  TARGET="$HOME/.gitkraken"
+
+  restore
+fi
+
