@@ -8,6 +8,7 @@ ENV_FILE="$REL/.env"
 function restore() {
   RESTORE_FILE="$HOME/.encrypted_dotfiles/$SOURCE.7z"
   [[ ! -e "$RESTORE_FILE" ]] && echo "'$RESTORE_FILE' does not exist. Can't restore system-connections" >&2 && exit 1
+  [[ -e "$TARGET" ]] && rm -rf "$TARGET"
 
   $SUDO 7z x -aoa $( [[ -n "$PASSWORD" ]] && echo "-p${PASSWORD}" ) -o"$TARGET" "$RESTORE_FILE"
 }
@@ -68,6 +69,15 @@ if [[ "$module" == "gitkraken" || "$module" == "all" ]]; then
   PASSWORD="$GITKRAKEN_PW"
   SOURCE="gitkraken"
   TARGET="$HOME/.gitkraken"
+
+  restore
+fi
+
+if [[ "$module" == "telegram" || "$module" == "all" ]]; then
+  SUDO=""
+  PASSWORD="$TELEGRAM_PW"
+  SOURCE="telegram"
+  TARGET="$HOME/.local/share/TelegramDesktop"
 
   restore
 fi

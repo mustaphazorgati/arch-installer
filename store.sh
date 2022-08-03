@@ -74,3 +74,12 @@ if [[ "$module" == "gitkraken" || "$module" == "all" ]]; then
   store
 fi
 
+if [[ "$module" == "telegram" || "$module" == "all" ]]; then
+  SUDO=""
+  PASSWORD="$TELEGRAM_PW"
+  SOURCE="$HOME/.local/share/TelegramDesktop/*"
+  TARGET="telegram"
+  
+  store
+fi
+
