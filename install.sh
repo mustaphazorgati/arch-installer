@@ -53,3 +53,8 @@ if [[ ! -e "/swapfile" ]]; then
   sudo swapon /swapfile
   echo "/swapfile none swap defaults 0 0" | sudo tee -a /etc/fstab
 fi
+
+# SSH Agent
+
+systemctl --user start ssh-agent
+systemctl --user enable ssh-agent
