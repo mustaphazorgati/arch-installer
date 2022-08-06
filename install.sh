@@ -1,5 +1,5 @@
 #/bin/sh
-set +x
+set -e
 
 REL="$(dirname "$0")"
 DOTFILES_HOME="$HOME/.dotfiles"

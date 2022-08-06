@@ -1,5 +1,5 @@
 #!/bin/sh
-set +x
+set -e
 
 REL="$(dirname "$0")"
 ENV_FILE="$REL/.env"
@@ -9,7 +9,7 @@ function store() {
   TARGET_FILE="$REL/.encrypted/$TARGET.7z"
   [[ -e "$TARGET_FILE" ]] && rm "$TARGET_FILE"
 
-  eval "$SUDO 7z a -t7z -m0=lzma2 -mx=9 -mfb=64 -md=32m -ms=on -mhe=on -p\"${PASSWORD}\" \"$TARGET_FILE\" \"$SOURCE\" $ADDITIONAL"
+  eval "$SUDO 7z a -t7z -m0=lzma2 -mx=9 -mfb=64 -md=32m -ms=on -mhe=on -p'${PASSWORD}' \"$TARGET_FILE\" \"$SOURCE\" $ADDITIONAL"
 }
 
 module="$1"

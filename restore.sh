@@ -1,5 +1,5 @@
 #!/bin/sh
-set +x
+set -e
 
 REL="$(dirname "$0")"
 ENV_FILE="$REL/.env"
@@ -8,7 +8,7 @@ ENV_FILE="$REL/.env"
 function restore() {
   RESTORE_FILE="$REL/.encrypted/$SOURCE.7z"
   [[ ! -e "$RESTORE_FILE" ]] && echo "'$RESTORE_FILE' does not exist. Can't restore system-connections" >&2 && exit 1
-  [[ -e "$TARGET" ]] && rm -rf "$TARGET"
+  [[ -e "$TARGET" ]] && sudo rm -rf "$TARGET"
 
   $SUDO 7z x -aoa $( [[ -n "$PASSWORD" ]] && echo "-p${PASSWORD}" ) -o"$TARGET" "$RESTORE_FILE"
 }
@@ -41,6 +41,7 @@ if [[ "$module" == "system-connections" || "$module" == "all" ]]; then
   TARGET="/etc/NetworkManager/system-connections"
 
   restore
+  sudo systemctl restart NetworkManager
 fi
 
 if [[ "$module" == "gpg" || "$module" == "all" ]]; then
@@ -50,8 +51,8 @@ if [[ "$module" == "gpg" || "$module" == "all" ]]; then
   TARGET="$(dirname "$0")/.export"
 
   restore
-  gpg --import "$TARGET/private.key"
-  gpg --import-ownertrust "$TARGET/ownertrust.key"
+  gpg --import "$(realpath "$TARGET/private.key")"
+  gpg --import-ownertrust "$(realpath "$TARGET/ownertrust.key")"
   rm -rf "$TARGET"
 fi
 
