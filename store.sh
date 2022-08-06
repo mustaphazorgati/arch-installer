@@ -92,3 +92,12 @@ if [[ "$module" == "slack" || "$module" == "all" ]]; then
   store
 fi
 
+if [[ "$module" == "signal" || "$module" == "all" ]]; then
+  SUDO=""
+  PASSWORD="$SIGNAL_PW"
+  SOURCE="$HOME/.config/Signal/*"
+  TARGET="signal"
+  
+  store
+fi
+

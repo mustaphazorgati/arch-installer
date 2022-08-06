@@ -92,3 +92,12 @@ if [[ "$module" == "slack" || "$module" == "all" ]]; then
   restore
 fi
 
+if [[ "$module" == "signal" || "$module" == "all" ]]; then
+  SUDO=""
+  PASSWORD="$SIGNAL_PW"
+  SOURCE="signal"
+  TARGET="$HOME/.config/signal"
+
+  restore
+fi
+
