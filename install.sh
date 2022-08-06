@@ -63,3 +63,7 @@ systemctl enable docker
 [[ -z "$(getent group docker)" ]] && sudo groupadd docker
 sudo usermod -aG docker $USER
 systemctl start docker
+
+# Disable Laptop speaker
+sudo modprobe -r pcspkr
+echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/blacklist.conf
