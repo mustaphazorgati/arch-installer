@@ -59,11 +59,10 @@ systemctl --user start ssh-agent
 systemctl --user enable ssh-agent
 
 # Docker
-systemctl start docker
-systemctl enable docker
+sudo systemctl start docker
+sudo systemctl enable docker
 [[ -z "$(getent group docker)" ]] && sudo groupadd docker
 sudo usermod -aG docker $USER
-systemctl start docker
 
 # Disable Laptop speaker
 sudo modprobe -r pcspkr
