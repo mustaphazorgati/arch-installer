@@ -21,6 +21,7 @@ fish
 flex
 gawk
 gcc
+gdown
 gettext
 git
 github-cli
