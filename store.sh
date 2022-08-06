@@ -6,7 +6,7 @@ ENV_FILE="$REL/.env"
 [[ -e "$ENV_FILE" ]] && export $(grep -v '^#' "$ENV_FILE" | xargs)
 
 function store() {
-  TARGET_FILE="$HOME/.encrypted_dotfiles/$TARGET.7z"
+  TARGET_FILE="$REL/.encrypted/$TARGET.7z"
   [[ -e "$TARGET_FILE" ]] && rm "$TARGET_FILE"
 
   eval "$SUDO 7z a -t7z -m0=lzma2 -mx=9 -mfb=64 -md=32m -ms=on -mhe=on -p\"${PASSWORD}\" \"$TARGET_FILE\" \"$SOURCE\" $ADDITIONAL"

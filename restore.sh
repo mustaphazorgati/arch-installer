@@ -6,7 +6,7 @@ ENV_FILE="$REL/.env"
 [[ -e "$ENV_FILE" ]] && export $(grep -v '^#' "$ENV_FILE" | xargs)
 
 function restore() {
-  RESTORE_FILE="$HOME/.encrypted_dotfiles/$SOURCE.7z"
+  RESTORE_FILE="$REL/.encrypted/$SOURCE.7z"
   [[ ! -e "$RESTORE_FILE" ]] && echo "'$RESTORE_FILE' does not exist. Can't restore system-connections" >&2 && exit 1
   [[ -e "$TARGET" ]] && rm -rf "$TARGET"
 

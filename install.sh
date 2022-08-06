@@ -18,6 +18,7 @@ git remote set-url origin git@github.com:mustaphazorgati/arch-installer.git
 cd -
 config remote set-url origin git@github.com:mustaphazorgati/dotfiles.git
 
+gdown --folder https://drive.google.com/drive/folders/12NUcpJUnYEIr2X7bSQR9gvvwpwl25tZa -O "$REL/.encrypted"
 "$REL/restore.sh"
 
 # BLUETOOTH
