@@ -83,3 +83,12 @@ if [[ "$module" == "telegram" || "$module" == "all" ]]; then
   restore
 fi
 
+if [[ "$module" == "slack" || "$module" == "all" ]]; then
+  SUDO=""
+  PASSWORD="$SLACK_PW"
+  SOURCE="slack"
+  TARGET="$HOME/.config/Slack"
+
+  restore
+fi
+
