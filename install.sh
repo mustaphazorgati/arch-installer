@@ -45,7 +45,6 @@ fi
 echo | vim +PluginInstall +qall
 
 # SWAP
-
 if [[ ! -e "/swapfile" ]]; then
   sudo dd if=/dev/zero of=/swapfile bs=4M count=12288 status=progress
   sudo chmod 0600 /swapfile
@@ -55,6 +54,12 @@ if [[ ! -e "/swapfile" ]]; then
 fi
 
 # SSH Agent
-
 systemctl --user start ssh-agent
 systemctl --user enable ssh-agent
+
+# Docker
+systemctl start docker
+systemctl enable docker
+[[ -z "$(getent group docker)" ]] && sudo groupadd docker
+sudo usermod -aG docker $USER
+systemctl start docker

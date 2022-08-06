@@ -4,11 +4,14 @@ archlinux-keyring
 autoconf
 automake
 base
+bind
 binutils
 bison
 blueman
 cifs-utils
 dmenu
+docker
+docker-compose
 dunst
 efibootmgr
 fakeroot
@@ -63,6 +66,8 @@ pacman
 pamixer
 patch
 pavucontrol
+perl-anyevent-i3
+picom
 pipewire
 pipewire-alsa
 pipewire-jack
