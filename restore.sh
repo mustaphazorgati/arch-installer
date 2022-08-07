@@ -96,7 +96,7 @@ if [[ "$module" == "signal" || "$module" == "all" ]]; then
   SUDO=""
   PASSWORD="$SIGNAL_PW"
   SOURCE="signal"
-  TARGET="$HOME/.config/signal"
+  TARGET="$HOME/.config/Signal"
 
   restore
 fi
