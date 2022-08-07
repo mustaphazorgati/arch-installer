@@ -8,7 +8,15 @@ function config {
    /usr/bin/git --git-dir="$DOTFILES_HOME" --work-tree=$HOME $@
 }
 
+# enable multilib repository, if not enabled yet
+sudo sed -i -r '/^#?\[multilib\]$/,+2 s/^#//' /etc/pacman.conf
+if [[ ! "$(grep "^\[multilib\]$" /etc/pacman.conf)" ]]; then 
+  echo '[multilib]' | sudo tee -a /etc/pacman.conf
+  echo 'Include = /etc/pacman.d/mirrorlist' | sudo tee -a /etc/pacman.conf
+fi
+
 "$REL/yay/install_yay.sh"
+yay -Syy
 "$REL/yay/install_yay_packages.sh"
 
 "$REL/checkout_dotfiles.sh"
