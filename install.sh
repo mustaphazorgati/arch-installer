@@ -67,3 +67,6 @@ sudo usermod -aG docker $USER
 # Disable Laptop speaker
 sudo modprobe -r pcspkr
 echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/blacklist.conf
+
+# enforce keymap during boot
+sudo mkinitcpio -P
