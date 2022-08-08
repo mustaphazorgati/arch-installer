@@ -40,7 +40,10 @@ i3exit
 i3lock
 i3status
 intel-ucode
+intellij-idea-ultimate-edition
 iwd
+jdk11-openjdk
+jdk8-openjdk
 jq
 libpulse
 libqmi
@@ -91,6 +94,7 @@ thefuck
 tmux
 trash-cli
 ttf-dejavu
+ttf-fira-code
 usbutils
 vi
 vim
