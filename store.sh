@@ -101,3 +101,12 @@ if [[ "$module" == "signal" || "$module" == "all" ]]; then
   store
 fi
 
+if [[ "$module" == "jetbrains" || "$module" == "all" ]]; then
+  SUDO=""
+  PASSWORD="$JETBRAINS_PW"
+  SOURCE="$HOME/.config/JetBrains/*"
+  TARGET="jetbrains"
+  
+  store
+fi
+
