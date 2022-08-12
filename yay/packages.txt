@@ -26,6 +26,7 @@ gettext
 git
 github-cli
 gitkraken
+gnome-keyring
 gnome-screenshot
 google-chrome
 gparted
@@ -41,6 +42,7 @@ i3lock
 i3status
 intel-ucode
 intellij-idea-ultimate-edition
+intellij-idea-ultimate-edition-jre
 iwd
 jdk11-openjdk
 jdk8-openjdk
@@ -63,6 +65,8 @@ networkmanager
 networkmanager-openvpn
 nitrogen
 nvidia
+openjdk11-doc
+openjdk11-src
 openvpn-update-resolv-conf-git
 otf-font-awesome
 p7zip
@@ -77,6 +81,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 pkgconf
+postman-bin
 rclone
 rofi
 rofi-greenclip
@@ -91,13 +96,16 @@ sudo
 telegram-desktop
 texinfo
 thefuck
+threema-desktop
 tmux
 trash-cli
 ttf-dejavu
 ttf-fira-code
+unzip
 usbutils
 vi
 vim
+visual-studio-code-bin
 wget
 which
 wireless_tools
