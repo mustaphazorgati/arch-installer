@@ -85,6 +85,7 @@ postman-bin
 rclone
 rofi
 rofi-greenclip
+rsync
 rxvt-unicode
 sed
 signal-desktop
@@ -105,6 +106,9 @@ unzip
 usbutils
 vi
 vim
+virtualbox
+virtualbox-ext-oracle
+virtualbox-guest-iso
 visual-studio-code-bin
 wget
 which
