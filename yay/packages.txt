@@ -97,7 +97,6 @@ sudo
 telegram-desktop
 texinfo
 thefuck
-threema-desktop
 tmux
 trash-cli
 ttf-dejavu
