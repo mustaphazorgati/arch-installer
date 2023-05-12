@@ -44,8 +44,6 @@ intel-ucode
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
 iwd
-jdk11-openjdk
-jdk8-openjdk
 jq
 libpulse
 libqmi
@@ -65,8 +63,6 @@ networkmanager
 networkmanager-openvpn
 nitrogen
 nvidia
-openjdk11-doc
-openjdk11-src
 openvpn-update-resolv-conf-git
 otf-font-awesome
 p7zip
@@ -89,7 +85,6 @@ rsync
 rxvt-unicode
 sed
 signal-desktop
-slack-desktop
 smartmontools
 spotify
 steam
