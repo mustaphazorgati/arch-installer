@@ -83,15 +83,6 @@ if [[ "$module" == "telegram" || "$module" == "all" ]]; then
   restore
 fi
 
-if [[ "$module" == "slack" || "$module" == "all" ]]; then
-  SUDO=""
-  PASSWORD="$SLACK_PW"
-  SOURCE="slack"
-  TARGET="$HOME/.config/Slack"
-
-  restore
-fi
-
 if [[ "$module" == "signal" || "$module" == "all" ]]; then
   SUDO=""
   PASSWORD="$SIGNAL_PW"
@@ -101,12 +92,12 @@ if [[ "$module" == "signal" || "$module" == "all" ]]; then
   restore
 fi
 
-if [[ "$module" == "jetbrains" || "$module" == "all" ]]; then
-  SUDO=""
-  PASSWORD="$JETBRAINS_PW"
-  SOURCE="jetbrains"
-  TARGET="$HOME/.config/JetBrains"
+#if [[ "$module" == "jetbrains" || "$module" == "all" ]]; then
+#  SUDO=""
+#  PASSWORD="$JETBRAINS_PW"
+#  SOURCE="jetbrains"
+#  TARGET="$HOME/.config/JetBrains"
 
-  restore
-fi
+#  restore
+#fi
 

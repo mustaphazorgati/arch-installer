@@ -83,15 +83,6 @@ if [[ "$module" == "telegram" || "$module" == "all" ]]; then
   store
 fi
 
-if [[ "$module" == "slack" || "$module" == "all" ]]; then
-  SUDO=""
-  PASSWORD="$SLACK_PW"
-  SOURCE="$HOME/.config/Slack/*"
-  TARGET="slack"
-  
-  store
-fi
-
 if [[ "$module" == "signal" || "$module" == "all" ]]; then
   SUDO=""
   PASSWORD="$SIGNAL_PW"
