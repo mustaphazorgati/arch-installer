@@ -56,15 +56,6 @@ if [[ "$module" == "gpg" || "$module" == "all" ]]; then
   rm -rf "$TARGET"
 fi
 
-if [[ "$module" == "google-chrome" || "$module" == "all" ]]; then
-  SUDO=""
-  PASSWORD="$GOOGLE_CHROME_PW"
-  SOURCE="google-chrome"
-  TARGET="$HOME/.config/google-chrome"
-
-  restore
-fi
-
 if [[ "$module" == "gitkraken" || "$module" == "all" ]]; then
   SUDO=""
   PASSWORD="$GITKRAKEN_PW"
