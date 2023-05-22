@@ -4,6 +4,7 @@ archlinux-keyring
 autoconf
 automake
 base
+base-devel
 bind
 binutils
 bison
@@ -32,6 +33,7 @@ google-chrome
 gparted
 grep
 groff
+grub
 gst-plugin-pipewire
 gzip
 htop
