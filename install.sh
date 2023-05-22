@@ -76,5 +76,8 @@ sudo usermod -aG docker $USER
 sudo modprobe -r pcspkr
 echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/blacklist.conf
 
+# X11 config
+sudo ln -s ~/.config/X11/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+
 # enforce keymap during boot
 sudo mkinitcpio -P
