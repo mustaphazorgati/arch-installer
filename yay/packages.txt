@@ -91,6 +91,7 @@ smartmontools
 spotify
 steam
 sudo
+teams
 telegram-desktop
 texinfo
 thefuck
