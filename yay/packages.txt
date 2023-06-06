@@ -42,6 +42,7 @@ i3blocks
 i3exit
 i3lock
 i3status
+icaclient
 intel-ucode
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
@@ -69,6 +70,7 @@ openvpn-update-resolv-conf-git
 otf-font-awesome
 p7zip
 pacman
+pacman-mirrorlist
 pamixer
 patch
 pavucontrol
@@ -80,6 +82,7 @@ pipewire-jack
 pipewire-pulse
 pkgconf
 postman-bin
+rankmirrors
 rclone
 rofi
 rofi-greenclip
