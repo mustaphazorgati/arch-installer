@@ -25,6 +25,7 @@ gawk
 gcc
 gdown
 gettext
+gimp
 git
 github-cli
 gitkraken
