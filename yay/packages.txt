@@ -68,6 +68,7 @@ networkmanager
 networkmanager-openvpn
 nitrogen
 nvidia
+obs-studio
 openvpn-update-resolv-conf-git
 otf-font-awesome
 p7zip
