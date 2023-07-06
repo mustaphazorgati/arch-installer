@@ -128,5 +128,6 @@ xorg-xinput
 xsel
 xterm
 yay
+zip
 zoom
 zram-generator
