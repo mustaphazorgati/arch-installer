@@ -82,3 +82,7 @@ sudo ln -s ~/.config/X11/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
 
 # enforce keymap during boot
 sudo mkinitcpio -P
+
+# configure fish
+[[ cat /etc/shells | grep "$(which fish)" ]] || echo "$(which fish)" | sudo tee -a /etc/shells
+chsh -s "$(which fish)"

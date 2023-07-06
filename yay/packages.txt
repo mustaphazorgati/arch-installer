@@ -75,6 +75,7 @@ p7zip
 pacman
 pacman-mirrorlist
 pamixer
+parallels-client
 patch
 pavucontrol
 perl-anyevent-i3
