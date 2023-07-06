@@ -20,6 +20,7 @@ fakeroot
 file
 findutils
 fish
+fisher
 flex
 gawk
 gcc
