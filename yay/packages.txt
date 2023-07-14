@@ -118,6 +118,7 @@ virtualbox-guest-iso
 visual-studio-code-bin
 wget
 which
+winbox
 wireless_tools
 wireplumber
 xdg-utils
