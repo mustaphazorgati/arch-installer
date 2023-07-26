@@ -46,6 +46,7 @@ i3exit
 i3lock
 i3status
 icaclient
+inetutils
 intel-ucode
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
@@ -105,6 +106,7 @@ telegram-desktop
 texinfo
 thefuck
 tmux
+traceroute
 trash-cli
 ttf-dejavu
 ttf-fira-code
