@@ -28,6 +28,7 @@ gdown
 gettext
 gimp
 git
+git-lfs
 github-cli
 gitkraken
 gnome-keyring
@@ -92,6 +93,7 @@ rankmirrors
 rclone
 rofi
 rofi-greenclip
+rpi-imager
 rsync
 rxvt-unicode
 sed
@@ -118,6 +120,7 @@ virtualbox
 virtualbox-ext-oracle
 virtualbox-guest-iso
 visual-studio-code-bin
+vlc
 wget
 which
 winbox
