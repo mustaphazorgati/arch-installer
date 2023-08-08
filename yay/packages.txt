@@ -1,5 +1,6 @@
 accountsservice
 alsa-utils
+ansible
 arandr
 archlinux-keyring
 autoconf
