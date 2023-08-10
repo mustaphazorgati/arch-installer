@@ -11,12 +11,16 @@ bind
 binutils
 bison
 blueman
+btrfs-progs
 cifs-utils
 dmenu
 docker
 docker-compose
+dosfstools
 dunst
 efibootmgr
+exfat-utils
+f2fs-tools
 fakeroot
 file
 findutils
@@ -35,6 +39,7 @@ gitkraken
 gnome-keyring
 gnome-screenshot
 google-chrome
+gpart
 gparted
 grep
 groff
@@ -53,6 +58,7 @@ intel-ucode
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
 iwd
+jfsutils
 jq
 libpulse
 libqmi
@@ -65,12 +71,16 @@ m4
 make
 man-db
 modemmanager
+mtools
 nano
 net-tools
 network-manager-applet
 networkmanager
 networkmanager-openvpn
+nilfs-utils
 nitrogen
+nmap
+ntfs-3g
 nvidia
 obs-studio
 openvpn-update-resolv-conf-git
@@ -92,6 +102,7 @@ pkgconf
 postman-bin
 rankmirrors
 rclone
+reiserfsprogs
 rofi
 rofi-greenclip
 rpi-imager
@@ -113,6 +124,7 @@ traceroute
 trash-cli
 ttf-dejavu
 ttf-fira-code
+udftools
 unzip
 usbutils
 vi
@@ -128,6 +140,7 @@ winbox
 wireless_tools
 wireplumber
 xdg-utils
+xfsprogs
 xorg-server
 xorg-xdpyinfo
 xorg-xinit
