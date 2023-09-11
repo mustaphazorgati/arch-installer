@@ -110,6 +110,7 @@ rsync
 rxvt-unicode
 sed
 signal-desktop
+slack-desktop
 smartmontools
 sof-firmware
 spotify
@@ -119,6 +120,7 @@ teams
 telegram-desktop
 texinfo
 thefuck
+thunderbird
 tmux
 traceroute
 trash-cli
@@ -139,6 +141,7 @@ which
 winbox
 wireless_tools
 wireplumber
+wmctrl
 xdg-utils
 xfsprogs
 xorg-server
