@@ -28,6 +28,7 @@ findutils
 fish
 fisher
 flex
+freerdp
 gawk
 gcc
 gdown
@@ -92,7 +93,6 @@ p7zip
 pacman
 pacman-mirrorlist
 pamixer
-parallels-client
 patch
 pavucontrol
 perl-anyevent-i3
@@ -106,6 +106,7 @@ postman-bin
 rankmirrors
 rclone
 reiserfsprogs
+remmina
 rofi
 rofi-greenclip
 rpi-imager
