@@ -85,6 +85,7 @@ nilfs-utils
 nitrogen
 nmap
 ntfs-3g
+numlockx
 nvidia
 obs-studio
 openvpn-update-resolv-conf-git
@@ -95,6 +96,7 @@ pacman-mirrorlist
 pamixer
 patch
 pavucontrol
+pdfmerger
 perl-anyevent-i3
 picom
 pipewire
