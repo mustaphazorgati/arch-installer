@@ -85,6 +85,7 @@ nilfs-utils
 nitrogen
 nmap
 ntfs-3g
+ntp
 numlockx
 nvidia
 obs-studio

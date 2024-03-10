@@ -80,6 +80,10 @@ echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/blacklist.conf
 [[ -e /etc/X11/xorg.conf.d/30-touchpad.conf ]] && sudo rm /etc/X11/xorg.conf.d/30-touchpad.conf
 sudo ln -s ~/.config/X11/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
 
+# NetworkManager
+[[ -e /etc/NetworkManager/dispatcher.d/10-ntp-over-dhcp ]] && sudo rm /etc/NetworkManager/dispatcher.d/10-ntp-over-dhcp
+sudo ln -s ~/.config/NetworkManager/dispatcher.d/10-ntp-over-dhcp /etc/NetworkManager/dispatcher.d/10-ntp-over-dhcp
+
 # enforce keymap during boot
 sudo mkinitcpio -P
 
