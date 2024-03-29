@@ -106,6 +106,8 @@ pipewire-jack
 pipewire-pulse
 pkgconf
 postman-bin
+python-pipenv
+qatlib
 rankmirrors
 rclone
 reiserfsprogs
@@ -145,6 +147,7 @@ virtualbox-guest-iso
 virtualbox-host-modules-arch
 visual-studio-code-bin
 vlc
+websocat
 wget
 which
 winbox
