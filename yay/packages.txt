@@ -81,6 +81,7 @@ net-tools
 network-manager-applet
 networkmanager
 networkmanager-openvpn
+nextcloud-client
 nilfs-utils
 nitrogen
 nmap
