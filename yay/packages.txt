@@ -85,6 +85,7 @@ nextcloud-client
 nilfs-utils
 nitrogen
 nmap
+noto-fonts-cjk
 ntfs-3g
 ntp
 numlockx
@@ -113,6 +114,7 @@ rankmirrors
 rclone
 reiserfsprogs
 remmina
+restic
 rofi
 rofi-greenclip
 rpi-imager
@@ -138,6 +140,7 @@ trash-cli
 ttf-dejavu
 ttf-fira-code
 udftools
+unrar
 unzip
 usbutils
 vi
@@ -148,6 +151,7 @@ virtualbox-guest-iso
 virtualbox-host-modules-arch
 visual-studio-code-bin
 vlc
+webex-bin
 websocat
 wget
 which
